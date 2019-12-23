@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView(){
         recycler_view.apply {
             layoutManager=LinearLayoutManager(this@MainActivity)
+            // topspacingdecoration gives the cardview in recyclerview padding
             val topSpacingDecoration= TopSpacingItemDecoration(30)
             addItemDecoration(topSpacingDecoration)
             blogAdapter= BlogRecyclerAdapter()
